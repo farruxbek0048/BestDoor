@@ -1,0 +1,10 @@
+.search input{
+    outline: none;
+    width: 100%;
+}
+
+.language{
+    border: none;
+    background: transparent;
+    outline: none;
+}
