@@ -1,28 +1,22 @@
-import { FaLocationDot } from "react-icons/fa6"
-import { FaPhoneAlt } from "react-icons/fa"
-import '../../styles/tailwind.css'
-import '../../index.css'
 
+import { Link } from "react-router-dom"
+import SearchIcon from '../../assets/images/icon/Search.svg'
+import MarketIcon from '../../assets/images/icon/Market.svg'
+import LikeIcon from '../../assets/images/icon/Like.svg'
+import UserImg from '../../assets/images/png-image/User.jpg'
 function Navbar() {
     return (
         <>
-            <div className="bg-primary text-primary px-[20px] py-[10px] 2xl:p-0 w-full">
-                <div className="container flex-between">
-                    <div className="location flex items-center gap-1">
-                        <FaLocationDot />
-                        <span className="font-normal ">Toshkent</span>
-                    </div>
-                    <div className="flex gap-[15px] xs:gap-[40px]">
-                        <select className="language">
-                            <option value="uz">Uzb</option>
-                            <option value="ru">Rus</option>
-                            <option value="en">Eng</option>
-                        </select>
-                        <div className="phone flex items-center gap-[8.5px]">
-                            <FaPhoneAlt />
-                            <span>+998999999999</span>
-                        </div>
-                    </div>
+            <div className="container mx-auto flex-between border-b">
+                <Link to="/" className="font-semibold text-xl whitespace-nowrap pr-4 py-[20px]">Eshik deraza</Link>
+                <div className="flex-between border w-[500px] py-2 px-4 gap-2 rounded-md">
+                    <input type="text" className="w-[100%] outline-none" placeholder="Nomi va turi bo'yicha qidiruv"/>
+                    <img src= {SearchIcon} alt="Search svg icon" />
+                </div>
+                <div className="flex-between gap-5">
+                    <img className="hidden md:flex" src= {MarketIcon} alt="Market svg icon" />
+                    <img className="hidden md:flex" src= {LikeIcon} alt="Like svg icon" />
+                    <img  className="hidden lg:flex w-[40px] h-[40px] object-cover rounded-full" src= {UserImg} alt="User png image" />
                 </div>
             </div>
         </>
