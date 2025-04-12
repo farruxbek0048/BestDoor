@@ -13,10 +13,10 @@ function Navbar() {
                     <input type="text" className="w-[100%] outline-none" placeholder="Nomi va turi bo'yicha qidiruv"/>
                     <img src= {SearchIcon} alt="Search svg icon" />
                 </div>
-                <div className="flex-between gap-5">
-                    <img className="hidden md:flex" src= {MarketIcon} alt="Market svg icon" />
-                    <img className="hidden md:flex" src= {LikeIcon} alt="Like svg icon" />
-                    <img  className="hidden lg:flex w-[40px] h-[40px] object-cover rounded-full" src= {UserImg} alt="User png image" />
+                <div className="hidden lg:flex  justify-between items-center gap-5">
+                    <img src= {MarketIcon} alt="Market svg icon" />
+                    <img src= {LikeIcon} alt="Like svg icon" />
+                    <img  className="w-[40px] h-[40px] object-cover rounded-full" src= {UserImg} alt="User png image" />
                 </div>
             </div>
         </>

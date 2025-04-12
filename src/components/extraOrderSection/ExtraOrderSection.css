@@ -1,5 +1,25 @@
-.extra-order-section{
+.extra-order-section {
     background-image: url('../../assets/images/png-image/Hall.png');
-    object-fit: cover;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Kichik ekranlar (mobil) uchun */
+@media (max-width: 640px) {
+    .extra-order-section {
+        background-position: top;
+        min-height: 250px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .extra-order-section {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 }
