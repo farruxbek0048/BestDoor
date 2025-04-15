@@ -1,16 +1,25 @@
-import './ExtraOrderSection.css'
-function ExtraOrderSection() {
-    return (
-        <div className="container mx-auto min-h-[300px] border-b-red-400 my-[90px] extra-order-section">
-            <div className="flex flex-col gap-[40px] py-[45px] pl-[20px] sm:pl-[100px] md:pl-[170px] ">
-                <div className="text-white flex-column gap-[10px]">
-                    <h1 className="font-medium text-3xl">Uyingizga mos bo'lgan uslubni <br /> biz bilan yarating</h1>
-                    <p>Uslubni yaratishda bizning maxsus xodimlarimiz sizga yordam berishadi</p>
-                </div>
-                <button className="bg-white text-black w-max px-4 py-2 rounded-md">Buyurtma qilish</button>
-            </div>
+import Button from "../../ui/Button"
+
+function ExtraPages() {
+  return (
+    <div className="container mx-auto w-full">
+      
+      <div className="extraOrder relative rounded-[20px] overflow-hidden w-full max-h-[275px] md:h-[250px] lg:h-[300px] bg-center bg-[url('/src/assets/images/png-image/hall-jpg.jpg')] bg-cover bg-center h-screen">
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-start md:px-[170px] px-20">
+          <div className="text-white space-y-5">
+            <h1 className="text-[20px] md:text-4xl font-bold leading-snug">
+              Uyingizga mos bo’lgan uslubni<br />
+              biz bilan yarating
+            </h1>
+            <p className="text-sm">
+              Uslubni yaratishda bizning maxsus xodimlarimiz sizga yordam berishadi
+            </p>
+            <Button text="Buyurtma qilish" variant="primary" />
+          </div>
         </div>
-    )
+      </div>
+    </div>
+  )
 }
 
-export default ExtraOrderSection
+export default ExtraPages
